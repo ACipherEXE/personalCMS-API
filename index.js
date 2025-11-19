@@ -15,14 +15,7 @@ const pool = new Pool({
   database: "personalcms",
 });
 
-// --- OPTIONAL function to get all tokens ---
-export async function getAllTables() {
-  const result = await pool.query("SELECT * FROM tokens");
-  console.log(result.rows);
-  return result.rows;
-}
-
-// --- API route: get tokens ---
+// get tokens
 app.get("/api/tokens/all", async (req, res) => {
   try {
     const result = await pool.query("SELECT * FROM tokens");
