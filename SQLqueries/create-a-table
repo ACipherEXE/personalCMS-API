@@ -1,0 +1,6 @@
+
+CREATE TABLE tableName (
+) INHERITS (base_entity);
+
+ALTER TABLE users
+ALTER COLUMN contentType SET DEFAULT 'tableName';

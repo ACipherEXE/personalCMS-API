@@ -1,0 +1,5 @@
+LECT t.*
+FROM token t
+JOIN "token_in_container" tic
+    ON tic."tokenId" = t.id
+WHERE tic."containerId" = '999-uuid-container';

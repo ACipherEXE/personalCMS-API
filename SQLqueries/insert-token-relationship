@@ -1,0 +1,2 @@
+INSERT INTO "token_in_container" ("tokenId", "containerId")
+VALUES ('123-uuid-token', '999-uuid-container');

@@ -1,0 +1,4 @@
+SELECT c.name AS container_name, t.name AS token_name
+FROM "token_in_container" tic
+JOIN token t ON tic."tokenId" = t.id
+JOIN "tokenContainer" c ON tic."containerId" = c.id;

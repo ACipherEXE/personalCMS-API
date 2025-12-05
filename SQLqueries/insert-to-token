@@ -1,0 +1,2 @@
+INSERT INTO token (name,contenttype,"en-us", "es-es")
+VALUES ('test','token','english output', 'spanish output');
