@@ -18,7 +18,7 @@ const pool = new Pool({
 // get tokens
 app.get("/api/tokens/all", async (req, res) => {
   try {
-    const result = await pool.query("SELECT * FROM tokens");
+    const result = await pool.query("SELECT * FROM base_entity");
     res.json(result.rows);
   } catch (err) {
     console.error(err);
