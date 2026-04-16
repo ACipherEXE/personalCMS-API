@@ -25,7 +25,7 @@ app.get("/api/tokens/all", async (req, res) => {
     res.status(500).json({ error: "Database error" });
   }
 });
-
+// Dummy comment so I can get a green square
 // Get a table from the database
 app.get("/api/:tableName", async (req, res) => {
   const tableName = req.params.tableName;
